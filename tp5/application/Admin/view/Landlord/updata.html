@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理员管理-有点</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/admin/css/css.css" />
+<script type="text/javascript" src="__ROOT__/admin/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/page.js" ></script> -->
+</head>
+
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__ROOT__/admin/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;-</span>&nbsp;房东管理
+			</div>
+		</div>
+
+		<div class="page">
+			<!-- user页面样式 -->
+			<div class="connoisseur">
+				<div class="conform">
+					<form action="{:url('landlord/up_landlord')}" method="post">
+						<div class="cfD">
+							<input type="hidden" name="id" value="<?= $data?>" />
+								<tr>
+									<td class="tdColor">房东姓名</td>
+									<td ><input type="text" name="names" id="names" height="40px"/></td>
+								</tr>
+								<br />
+								<tr>
+									<td class="tdColor">手机号&nbsp;&nbsp;&nbsp;</td>
+									<td><input type="text" name="phone" id="phone" /></td>
+								</tr>
+								<br />
+								<tr>
+									<td class="tdColor">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td><input type="text" name="email" id="email" /></td>
+								</tr>
+								<br />
+								<tr>
+								<td></td>
+									<td>
+									<input type="submit" value="修改" class="userbtn" style="height:30px"/>
+									</td>
+								</tr>
+							
+						</div>
+					</form>
+				</div>
+				<!-- user 表格 显示 -->
+				
+			</div>
+			<!-- user页面样式end -->
+		</div>
+
+	</div>
+
+
+<script type="text/javascript">
+// 广告弹出框
+$(".delban").click(function(){
+  $(".banDel").show();
+});
+$(".close").click(function(){
+  $(".banDel").hide();
+});
+$(".no").click(function(){
+  $(".banDel").hide();
+});
+// 广告弹出框 end
+</script>
+</html>
